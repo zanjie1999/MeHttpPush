@@ -9,4 +9,5 @@
 ```
 https://api.day.app/key/{}?sound=minuet
 https://sc.ftqq.com/key.send?text=
+https://api.telegram.org/botkey/sendMessage?chat_id=123&text=
 ```
