@@ -19,7 +19,8 @@ https://api.telegram.org/botkey/sendMessage?chat_id=123&text=
 ```
 <div style="display: inline-block;"><?php MeHttpPush_Plugin::auth(); ?></div>
 ```
-管理员登录的情况下不会验证验证，所以可以将上面的按钮这样包起来，就只会在没有登录的时候显示了，通常主题会为游客单独写一个提交的from，可以自行找一下这个php标签  
+管理员登录的情况下不会验证验证，所以可以将上面的按钮这样包起来，就只会在没有登录的时候显示了  
+通常主题会为游客单独写一个提交的form，可以自行找一下这个php标签  
 ```
 <?php if(!$this->user->hasLogin()): ?>
 
