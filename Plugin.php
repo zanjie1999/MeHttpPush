@@ -82,9 +82,9 @@ class MeHttpPush_Plugin implements Typecho_Plugin_Interface {
                 continue;
             } else if (strpos($url, '{}') !== false) {
                 $url = str_replace('{}', $comment['text'], $url);
-                file_get_contents($url);
+                file_get_contents($url.'&t='.time());
             } else {
-                file_get_contents($url.$msg);
+                file_get_contents($url.$msg.'&t='.time());
             }
         }
         return  $comment;
